@@ -200,6 +200,8 @@ ul li a, ul p{
     background: linear-gradient(rgba(255, 212, 186, 0.75), rgba(255, 213, 128, 0.75));
     box-shadow: 0 0 14px 0 rgb(0, 0, 0, 0.15);
     backdrop-filter: blur(5px);
+    width: 100%;
+    overflow-wrap: break-word;
 }
 .left-box .text-box, #pitch .text-box{
     /* background: linear-gradient(rgba(164, 236, 209, 0.5), rgba(68, 204, 153, 0.5)); */
@@ -296,19 +298,43 @@ span{
     header ul li a, .line{
         display: none;
     }
+
+    .text{
+        width: 90vw;
+        text-align: left;
+    }
+
     #information-wrapper{
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    #information-wrapper .left-box, .right-box{
+    #information-wrapper .left-box, #information-wrapper .right-box{
         justify-content: center;
         align-items: flex-end;
         border-radius: 45px;
-        max-width: 95vw;
+        max-width: 90vw;
+        height: auto;
+        padding: 7px 28px 28px 28px;
+        background-position: bottom center;
+        background-size: auto 80%;
+    }
+    #information-wrapper .left-box{
+        background-position: bottom left 40%;
     }
     #information-wrapper .area-box .column{
-        gap: 40px;
+        justify-content: space-between;
+        align-items: space-between;
+        width: 100%;
+        height: 100%;
+        gap: 35px;
+    }
+    #information-wrapper .row{
+        width: 100%;
+        justify-content: space-between;
+    }
+    #information-wrapper .text-box{
+        width: 100%;
     }
 
     #pitch .area-box{
