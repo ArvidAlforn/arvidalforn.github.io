@@ -1,0 +1,317 @@
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 25vh;
+}
+body{
+    /* background-image: linear-gradient(to right bottom, #fed9d0, #ffdfd0, #ffe5d1, #ffecd3, #fff3d7, #fff3d7, #fff3d7, #fff3d7, #ffecd3, #ffe5d1, #ffdfd0, #fed9d0); */
+    background-color: rgb(255, 255, 255);
+    max-width: 100vw;
+    margin: 0;
+}
+html, body{
+    overflow-x: hidden;
+}
+p, h1, h2, h3, h4, a{
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}
+a{
+    color:rgb(29, 71, 163);
+}
+h2{
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'DM Serif Text';
+}
+strong{
+    font-family: 'DM Sans';
+}
+.text-box strong{
+    font-size: 14px;
+}
+header, #pitch, #contact{
+    margin-bottom: 28px;
+}
+.centered{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.area-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF8F1;
+    padding: 28px;
+    gap: 28px;
+    border-radius: 45px;
+    p{
+        font-size: 13px;
+    }
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    text-align: center;
+    gap: 14px;
+    box-sizing: border-box;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+.combo-mark{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+header{
+    position: relative;
+}
+header .area-box{
+    border-radius: 0 0 40px 40px;
+    padding: 14px;
+    gap: 21px;
+    box-shadow: 0 0 21px 0 rgb(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    backdrop-filter: blur(7px);
+    stroke: red;
+    z-index: 1000;
+    width: 100%;
+    background: linear-gradient(to right, #FFF8F1, rgba(255, 212, 186, 0.75), #FFF8F1);
+}
+.logo{
+    width: 70px;
+    height: 100%;
+}
+
+.combo-mark h1{
+    margin-top: -7px;
+    font-size: 34px;
+    font-family: 'DM Serif Text';
+    font-weight: 400;
+    line-height: 1.25;
+}
+.combo-mark h2{
+    margin-top: -7px;
+    font-size: 19px;
+    font-weight: 400;
+    font-family: 'DM Serif Text';
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 7px;
+}
+.line{
+    width: 1px;
+    height: 49px;
+    background: linear-gradient(rgba(255, 212, 186, 0.5), rgba(255, 213, 128, 0.5));
+}
+ul li a, ul p{
+    font-size: 13px;
+    color:rgb(0, 0, 0, 0.75);
+    text-decoration: none;
+    text-align: center;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    gap: 14px;
+    max-width: 500px;
+}
+
+#information-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 28px 0 14px 0;
+    gap: 28px;
+    max-width: 100%;
+}
+#information-wrapper .area-box{
+    height: 250px;
+    width: 100%;
+    padding: 28px 28px 28px 28px;
+    box-shadow: inset 0 0 14px 0 rgb(0, 0, 0, 0.15);
+    box-sizing: border-box;
+}
+.left-box{
+    justify-content: flex-end;
+    border-radius: 0 40px 40px 0;
+    background-image: url(images/squash-player2.png); 
+    background-repeat: no-repeat;
+    background-position: right 20vw top 14px;
+    background-size: auto 100%;
+}
+.right-box{
+    justify-content: flex-start;
+    border-radius: 40px 0 0 40px;
+    background-image: url(images/squash-racket2.png); 
+    background-repeat: no-repeat;
+    background-position: left 20vw top 14px;
+    background-size: auto 100%;
+}
+.background-blur{
+    backdrop-filter: blur(5px);
+    padding: 0 7px 0 7px;
+    border-radius: 7px;
+}
+.stroke{
+    text-shadow: rgb(255, 248, 241) 0px 0px 5px;
+}
+.invert{
+    filter: invert(1);
+    mix-blend-mode: difference;
+}
+
+.left-box .column{
+    width: fit-content;
+}
+.right-box .column{
+    width: fit-content;
+}
+.image-wrapper{
+    display: inline-flex;
+}
+.text-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+    border-radius: 30px;
+    font-size: 13px;
+    text-align: center;
+    line-height: 1.75;
+    background: linear-gradient(rgba(255, 212, 186, 0.75), rgba(255, 213, 128, 0.75));
+    box-shadow: 0 0 14px 0 rgb(0, 0, 0, 0.15);
+    backdrop-filter: blur(5px);
+}
+.left-box .text-box, #pitch .text-box{
+    /* background: linear-gradient(rgba(164, 236, 209, 0.5), rgba(68, 204, 153, 0.5)); */
+}
+
+.right-box .text-box, #contact .text-box{
+    /* background: linear-gradient(rgba(246, 185, 185, 0.5), rgba(246, 131, 131, 0.5)); */
+}
+#information-text{
+    justify-content: center;
+    align-items: flex-start;
+    gap: 84px;
+}
+#information-text{
+    font-size: 13px;
+}
+#information-text div{
+    width: 50%;
+}
+.left-text{
+    text-align: right;
+}
+.right-text{
+    text-align: left;
+}
+/* #information-text .text:first-child{
+    width: 240px;
+}
+#information-text .text:nth-child(2){
+    width: 320px;
+} */
+
+.transparent{
+    background-color: rgb(0, 0, 0, 0);
+    background-image: none;
+}
+#pricing img{
+    height: 98px;
+    opacity: 100%;
+    align-self: center;
+    position: absolute;
+    z-index: 1;
+}
+#pricing .row{
+    gap: 28px;
+}
+/* #pricing .text-box, #contact .text-box{
+    background: linear-gradient(rgba(255, 189, 221, 0.75), rgba(255, 106, 106, 0.75));
+    box-shadow: 0 0 14px 0 rgb(0, 0, 0, 0.15);
+} */
+#pricing .text-box{
+    
+}
+#pricing .text-box strong{
+    font-size: 16px;
+}
+
+#pitch .area-box, #contact .area-box{
+    width: 700px;
+    box-sizing: border-box;
+}
+#pitch .area-box{
+    box-shadow: inset 0 0 14px 0 rgb(0, 0, 0, 0.15);
+}
+#pitch br{
+    height: 1px;
+}
+.text.box img{
+    opacity: 0.5;
+}
+.stretch {
+    width: 100%;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+footer{
+    margin-top: 28px;
+}
+footer .area-box{
+    border-radius: 40px 40px 0 0;
+    padding: 21px 28px;
+    box-shadow: 0 0 14px 0 rgb(0, 0, 0, 0.15);
+    width: 100%;
+    box-sizing: border-box;
+}
+span{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 768px){
+    header ul li a, .line{
+        display: none;
+    }
+    #information-wrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #information-wrapper .left-box, .right-box{
+        justify-content: center;
+        align-items: flex-end;
+        border-radius: 45px;
+        max-width: 95vw;
+    }
+    #information-wrapper .area-box .column{
+        gap: 40px;
+    }
+
+    #pitch .area-box{
+        width: 100%;
+    }
+}
