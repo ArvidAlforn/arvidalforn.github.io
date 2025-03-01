@@ -13,7 +13,7 @@ html, body{
 }
 p, h1, h2, h3, h4, a, strong, .avoid-wrap, .wrap-hyphen{
     margin: 0;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Sans', Arial, Helvetica, sans-serif;
     color: rgb(0, 0, 0);
 }
 a{
@@ -22,7 +22,7 @@ a{
 h2{
     font-size: 24px;
     font-weight: 400;
-    font-family: 'DM Serif Text';
+    font-family: 'DM Serif Text', 'Times New Roman', Times, serif;
 }
 strong{
     font-weight: 700;
@@ -305,6 +305,9 @@ span{
 /* Mobile */
 
 @media only screen and (max-width: 768px){
+    body{
+        background-color: #FFF8F1;
+    }
     .desktop-only{
         display: none;
     }
@@ -323,6 +326,13 @@ span{
         width: 90vw;
         text-align: left;
     }
+    header .area-box{
+        background: none;
+        background-color: #FFFFFF;
+    }
+    .area-box{
+        background-color: #FFFFFF;
+    }
 
     #information-wrapper{
         flex-direction: column;
@@ -333,7 +343,7 @@ span{
         justify-content: center;
         align-items: flex-end;
         border-radius: 45px;
-        max-width: 90vw;
+        max-width: 95vw;
         height: auto;
         padding: 7px 21px 21px 21px;
         background-position: bottom center;
@@ -353,13 +363,18 @@ span{
         width: 100%;
         justify-content: space-between;
     }
-    #information-wrapper .text-box{
+    .text-box{
         width: auto;
         text-wrap: wrap;
         overflow-wrap: anywhere;
+        line-height: 1.5;
+    }
+
+    #pricing .area-box, #contact .area-box{
+        background-color: transparent;
     }
 
     #pitch .area-box{
-        width: 100%;
+        width: 95vw;
     }
 }
