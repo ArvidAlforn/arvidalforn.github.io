@@ -31,7 +31,7 @@ strong{
     font-size: 14px;
 }
 span.avoid-wrap{
-    display:inline-block;
+    display: inline-block;
 }
 .line-break{
     display: inline;
@@ -221,13 +221,13 @@ ul li a, ul p{
 #information-wrapper .text-box{
 
 }
-/* .left .text-box, #pitch .text-box{
+.left .text-box, #pitch .text-box{
     background: linear-gradient(rgba(164, 236, 209, 0.75), rgba(68, 204, 153, 0.75));
 }
 
 .right .text-box, #contact .text-box{
     background: linear-gradient(rgba(246, 185, 185, 0.75), rgba(246, 131, 131, 0.75));
-} */
+}
 .information-text div{
     width: 50%;
 }
@@ -382,13 +382,14 @@ span{
         justify-content: space-between;
     }
     #information-wrapper .text-box{
-    max-width: 40%;
+        width: auto;
     }
     .text-box{
         width: auto;
         text-wrap: wrap;
-        overflow-wrap: anywhere;
+        overflow-wrap: normal;
         line-height: 1.5;
+        flex: 1;
     }
     .left .text, .right .text{
         width: 90vw;
@@ -410,6 +411,9 @@ span{
     }
     #pitch .row .text-box{
         width: 50%;
+    }
+    .text-box strong{
+        font-size: 13px;
     }
 
     #contact .area-box{
