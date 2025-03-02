@@ -292,8 +292,6 @@ ul li a, ul p{
 #pitch .area-box{
     box-shadow: inset 0 0 14px 0 rgb(0, 0, 0, 0.15);
 }
-#pitch br{
-}
 .text.box img{
     opacity: 0.5;
 }
@@ -408,7 +406,7 @@ span{
         background-color: transparent;
     }
 
-    #pricing .area-box{
+    #pricing .area-box, #contact .area-box{
         padding: 0 21px 0 21px;
     }
 
@@ -416,9 +414,15 @@ span{
         width: 100vw;
         box-shadow: 0 0 21px 0 rgb(0, 0, 0, 0.15);
     }
+    #pitch .row .text-box{
+        width: 50%;
+    }
 
     #contact .area-box{
         width: 100vw;
+    }
+    #contact .row{
+        flex-direction: column;
     }
 
 }
