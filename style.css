@@ -221,13 +221,13 @@ ul li a, ul p{
 #information-wrapper .text-box{
 
 }
-.left .text-box, #pitch .text-box{
-    background: linear-gradient(rgba(164, 236, 209, 0.75), rgba(68, 204, 153, 0.75));
+/* .left .text-box, #pitch .text-box{
+    background: linear-gradient(rgba(164, 236, 209, 0.5), rgba(68, 204, 153, 0.5));
 }
 
 .right .text-box, #contact .text-box{
-    background: linear-gradient(rgba(246, 185, 185, 0.75), rgba(246, 131, 131, 0.75));
-}
+    background: linear-gradient(rgba(246, 185, 185, 0.5), rgba(246, 131, 131, 0.5));
+} */
 .information-text div{
     width: 50%;
 }
@@ -390,6 +390,7 @@ span{
         overflow-wrap: normal;
         line-height: 1.5;
         flex: 1;
+        max-width: 35%;
     }
     .left .text, .right .text{
         width: 90vw;
