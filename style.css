@@ -337,6 +337,7 @@ span{
     }
     .area-box{
         background-color: #FFFFFF;
+        padding: 21px;
     }
 
     #introduction, .left, .right, #pricing, #pitch, #contact{
@@ -381,6 +382,7 @@ span{
         justify-content: space-between;
     }
     #information-wrapper .text-box{
+    max-width: 40%;
     }
     .text-box{
         width: auto;
