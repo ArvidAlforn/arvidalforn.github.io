@@ -398,6 +398,9 @@ span{
         text-align: left;
         padding: 0;
     }
+    .left .text-box{
+        max-width: fit-content;
+    }
 
     #pricing .area-box, #contact .area-box, #pitch .area-box{
         width: 95vw;
