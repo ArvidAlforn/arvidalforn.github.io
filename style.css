@@ -185,7 +185,7 @@ ul li a, ul p{
     box-shadow: inset 0 0 14px 0 rgb(0, 0, 0, 0.15);
 }
 .background-blur{
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(7px);
     padding: 0 7px 0 7px;
     border-radius: 7px;
 }
@@ -211,10 +211,10 @@ ul li a, ul p{
     border-radius: 30px;
     font-size: 13px;
     text-align: center;
-    line-height: 1.75;
+    line-height: 1.5;
     background: linear-gradient(rgba(255, 212, 186, 0.75), rgba(255, 213, 128, 0.75));
     box-shadow: 0 0 14px 0 rgb(0, 0, 0, 0.15);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(7px);
     overflow-wrap: break-word;
     hyphens: auto;
 }
@@ -279,7 +279,15 @@ ul li a, ul p{
     box-sizing: border-box;
 }
 #pitch .area-box{
-    box-shadow: 0 0 14px 0 rgb(0, 0, 0, 0.15);
+    box-shadow: inset 0 0 14px 0 rgb(0, 0, 0, 0.15);
+    background: url(images/squash-racket-and-ball.png);
+    background-position: bottom 320% right 54.25%;
+    background-size: 145%;
+    background-repeat: no-repeat;
+    background-color: #FFF8F1;
+}
+#pitch .text-box{
+    line-height: 1.5;
 }
 .text.box img{
     opacity: 0.5;
@@ -364,16 +372,17 @@ span{
         justify-content: center;
         align-items: flex-end;
         border-radius: 45px;
-        width: 95vw;
+        width: 90vw;
         height: auto;
-        padding: 14px 21px 21px 21px;
+        padding: 0 0 21px 0;
         background-position: bottom center;
-        background-size: auto 80%;
+        background-size: auto 85%;
         background-color: transparent;
         box-shadow: inset 0 0 0 0;
     }
     #information-wrapper .left .area-box{
-        background-position: bottom left 30%;
+        background-position: bottom right 70%;
+        background-size: auto 90%;
     }
     .background-blur{
         backdrop-filter: blur(0);    
@@ -383,7 +392,7 @@ span{
         align-items: space-between;
         width: 100%;
         height: 100%;
-        gap: 63px;
+        gap: 49px;
     }
     #information-wrapper .row{
         width: 100%;
@@ -400,15 +409,21 @@ span{
         flex: 1;
     }
     .left .text, .right .text{
-        width: 95vw;
+        width: 90vw;
         text-align: left;
-        padding: 14px 21px;
+        padding: 14px;
         box-shadow: 0 0 14px 0 rgb(0, 0, 0, 0.15);
-        box-sizing: border-box;
         border-radius: 21px;
+        box-sizing: border-box;
     }
     .left .text-box{
         max-width: fit-content;
+    }
+    .right .text-box{
+        max-width: 35%;
+    }
+    #information-wrapper .text-box{
+        flex: 1;
     }
 
     #pricing .area-box, #contact .area-box, #pitch .area-box{
@@ -417,6 +432,10 @@ span{
 
     #pitch .area-box{
         box-shadow: 0 0 14px 0 rgb(0, 0, 0, 0.15);
+        background: url(images/squash-racket-and-ball.png);
+        background-position: top 50vw right 50.25%;
+        background-size: 400%;
+        background-repeat: no-repeat;
     }
 
     /* .text-box strong{
@@ -425,6 +444,7 @@ span{
 
     #pitch .text-box{
         text-align: left;
+        align-items: flex-start;
     }
 
     #contact .area-box{
