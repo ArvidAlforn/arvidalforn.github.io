@@ -514,7 +514,7 @@ span{
         display: block;
         position: absolute;
         width: 100vw;
-        border-bottom: solid 7px #EA6666;
+        border-bottom: solid 7px #EC8383;
         top: 50%;
         z-index: 0;
     }
