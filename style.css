@@ -30,7 +30,7 @@ strong{
 .text-box strong{
     font-size: 14px;
 }
-span.avoid-wrap{
+span .avoid-wrap{
     display: inline-block;
 }
 .line-break{
@@ -61,6 +61,7 @@ header, #introduction, #pricing, #pitch, #contact{
     gap: 28px;
     border-radius: 45px;
     box-sizing: border-box;
+    box-shadow: 0 4px 14px 0 rgb(0, 0, 0, 0.15);
 }
 .column{
     display: flex;
@@ -87,16 +88,16 @@ header{
     position: relative;
 }
 header .area-box{
-    border-radius: 0 0 40px 40px;
+    border-radius: 0 0 45px 45px;
     padding: 14px;
     gap: 21px;
-    box-shadow: 0 0 21px 0 rgb(0, 0, 0, 0.15);
+    box-shadow: 0 4px 14px 0 rgb(0, 0, 0, 0.15);
     box-sizing: border-box;
     backdrop-filter: blur(7px);
     stroke: red;
     z-index: 1000;
     width: 100%;
-    background: linear-gradient(to right, #FFF8F1, rgba(255, 212, 186, 0.75), #FFF8F1);
+    background: linear-gradient(to right, #FFF8F1, rgba(255, 212, 186, 0.5), #FFF8F1);
 }
 .logo{
     width: 70px;
@@ -127,7 +128,7 @@ ul{
 .line{
     width: 1px;
     height: 49px;
-    background: linear-gradient(rgba(255, 212, 186, 0.5), rgba(255, 213, 128, 0.5));
+    background-color:rgb(0, 0, 0, 0.1);
 }
 ul li a, ul p{
     font-size: 13px;
@@ -159,30 +160,27 @@ ul li a, ul p{
     width: 100%;
     gap: 14px;
 }
-.information-wrapper .area-box{
-    height: 250px;
+#information-wrapper .area-box{
+    height: 300px;
     width: 100%;
     padding: 28px 28px 28px 28px;
-    box-shadow: inset 0 0 14px 0 rgb(0, 0, 0, 0.15);
     box-sizing: border-box;
 }
 .left .area-box{
     justify-content: flex-end;
     border-radius: 0 40px 40px 0;
-    background-image: url(images/squash-player2.png); 
+    background-image: url(images/squash-player-bright2.png); 
     background-repeat: no-repeat;
-    background-position: right 20vw top 14px;
-    background-size: auto 100%;
-    box-shadow: inset 0 0 14px 0 rgb(0, 0, 0, 0.15);
+    background-position: right 140px bottom;
+    background-size: auto 95%;
 }
 .right .area-box{
     justify-content: flex-start;
     border-radius: 40px 0 0 40px;
-    background-image: url(images/squash-racket2.png); 
+    background-image: url(images/squash-racket-bright.png); 
     background-repeat: no-repeat;
-    background-position: left 20vw top 14px;
-    background-size: auto 100%;
-    box-shadow: inset 0 0 14px 0 rgb(0, 0, 0, 0.15);
+    background-position: left 284px bottom;
+    background-size: auto 90%;
 }
 .background-blur{
     backdrop-filter: blur(7px);
@@ -213,7 +211,7 @@ ul li a, ul p{
     text-align: center;
     line-height: 1.5;
     background: linear-gradient(rgba(255, 212, 186, 0.75), rgba(255, 213, 128, 0.75));
-    box-shadow: 0 0 14px 0 rgb(0, 0, 0, 0.15);
+    box-shadow: 0 2px 7px 0 rgb(0, 0, 0, 0.15);
     backdrop-filter: blur(7px);
     overflow-wrap: break-word;
     hyphens: auto;
@@ -222,11 +220,11 @@ ul li a, ul p{
 
 }
 /* .left .text-box, #pitch .text-box{
-    background: linear-gradient(rgba(164, 236, 209, 0.5), rgba(68, 204, 153, 0.5));
+    background: linear-gradient(rgba(164, 236, 209, 0.75), rgba(68, 204, 153, 0.75));
 }
 
 .right .text-box, #contact .text-box{
-    background: linear-gradient(rgba(246, 185, 185, 0.5), rgba(246, 131, 131, 0.5));
+    background: linear-gradient(rgba(246, 185, 185, 0.75), rgba(246, 131, 131, 0.75));
 } */
 .information-text div{
     width: 50%;
@@ -253,6 +251,7 @@ ul li a, ul p{
 .transparent{
     background-color: rgb(0, 0, 0, 0);
     background-image: none;
+    box-shadow: 0 0 0 0 rgb(0, 0, 0, 0);
 }
 #pricing img{
     height: 98px;
@@ -279,15 +278,15 @@ ul li a, ul p{
     box-sizing: border-box;
 }
 #pitch .area-box{
-    box-shadow: inset 0 0 14px 0 rgb(0, 0, 0, 0.15);
-    background: url(images/squash-racket-and-ball.png);
-    background-position: bottom 320% right 54.25%;
-    background-size: 145%;
+    background: url(images/squash-court-background.png);
+    background-position: bottom center;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-color: #FFF8F1;
 }
 #pitch .text-box{
     line-height: 1.5;
+    flex: 1;
 }
 .text.box img{
     opacity: 0.5;
@@ -314,6 +313,10 @@ footer img{
 }
 span{
     font-family: 'Times New Roman', Times, serif;
+}
+
+@media only screen and (max-width: 1500px){
+
 }
 
 /* Mobile */
@@ -390,7 +393,7 @@ span{
     .left, .right{
         gap: 0;
     }
-    .left .area-box, .right .area-box{
+    #information-wrapper .area-box, .left .area-box, .right .area-box{
         justify-content: center;
         align-items: flex-end;
         border-radius: 0;
@@ -403,10 +406,10 @@ span{
         box-shadow: inset 0 0 0 0;
     }
     .left .area-box{
-        background-image: url(images/squash-player-hd-denoised.png);
+        background-image: url(images/squash-player-bright2.png);
     }
     .right .area-box{
-        background-image: url(images/squash-racket-hd.png);
+        background-image: url(images/squash-racket-bright.png);
     }
     #information-wrapper .left .area-box{
         background-position: bottom center;
@@ -420,7 +423,7 @@ span{
         align-items: space-between;
         width: 90vw;
         height: 100%;
-        gap: 91px;
+        gap: 105px;
     }
     #information-wrapper .row{
         width: 100%;
@@ -440,7 +443,7 @@ span{
         font-size: 12px;
     }
     .text-box strong{
-        font-size: 14px;
+        font-size: 13px;
     }
     .left .text, .right .text{
         width: 100vw;
@@ -467,16 +470,31 @@ span{
     #pitch .area-box{
         width: 100vw;
         box-shadow: 0 0 14px 0 rgb(0, 0, 0, 0.15);
-        background: url(images/squash-racket-and-ball-sat.png);
-        background-position: top 50vw right 50.25%;
-        background-size: 400%;
-        background-repeat: no-repeat;
+        background: none;
+        /* background-position: top 30vh center;
+        background-size: cover;
+        background-repeat: no-repeat; */
         background-color: #FFF8F1;
+    }
+    #pitch .row{
+        position: relative;
+    }
+    
+    #pitch .row::after{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100vw;
+        border-bottom: solid 7px #EA6666;
+        top: 50%;
+        z-index: 0;
     }
 
     #pitch .text-box{
         text-align: left;
         align-items: flex-start;
+        position: relative;
+        z-index: 1;
     }
 
     #contact .area-box{
