@@ -214,7 +214,7 @@ ul li a, ul p{
     box-shadow: 0 2px 7px 0 rgb(0, 0, 0, 0.15);
     backdrop-filter: blur(7px);
     overflow-wrap: break-word;
-    hyphens: auto;
+    word-break: keep-all;
 }
 #information-wrapper .text-box{
 
@@ -268,9 +268,10 @@ ul li a, ul p{
     box-shadow: 0 0 14px 0 rgb(0, 0, 0, 0.15);
 } */
 #pricing .text-box{
+
 }
 #pricing .text-box strong{
-    font-size: 16px;
+    font-size: 14px;
 }
 
 #pitch .area-box, #contact .area-box{
@@ -373,7 +374,15 @@ span{
     .area-box{
         background-color: #FFFFFF;
         padding: 14px 21px 21px 21px;
-        width: 95vw;
+        width: 100vw;
+    }
+
+    header{
+        margin-bottom: 21px;
+    }
+
+    #introduction, #pricing, #pitch, #contact{
+        margin-bottom: 14px;
     }
 
     #introduction, .left, .right, #pricing, #pitch, #contact{
@@ -389,6 +398,8 @@ span{
         align-items: center;
         width: 100%;
         gap: 14px;
+        margin: 14px 0 0 0;
+
     }
     .left, .right{
         gap: 0;
@@ -413,7 +424,7 @@ span{
     }
     #information-wrapper .left .area-box{
         background-position: bottom center;
-        background-size: auto 95%;
+        background-size: auto 90%;
     }
     .background-blur{
         backdrop-filter: blur(0);    
@@ -423,7 +434,7 @@ span{
         align-items: space-between;
         width: 90vw;
         height: 100%;
-        gap: 105px;
+        gap: 98px;
     }
     #information-wrapper .row{
         width: 100%;
@@ -437,7 +448,6 @@ span{
         text-wrap: wrap;
         overflow-wrap: normal;
         line-height: 1.5;
-        flex: 1;
     }
     .text-box p{
         font-size: 12px;
@@ -446,7 +456,7 @@ span{
         font-size: 13px;
     }
     .left .text, .right .text{
-        width: 100vw;
+        width: 90vw;
         text-align: left;
         padding: 14px;
         box-shadow: 0 7px 14px 0 rgb(0, 0, 0, 0.15);
@@ -457,14 +467,13 @@ span{
         max-width: fit-content;
     }
     .right .text-box{
-        max-width: 40%;
+        max-width: fit-content;
     }
     #information-wrapper .text-box{
-        flex: 1;
     }
 
     #pricing .area-box, #contact .area-box{
-        width: 95vw;
+        width: 100vw;
     }
 
     #pitch .area-box{
@@ -497,11 +506,12 @@ span{
         z-index: 1;
     }
 
-    #contact .area-box{
-        width: 95vw;
-    }
+
     #contact .row{
         flex-direction: column;
+    }
+    footer{
+        margin-top: 21px;
     }
 
 }
