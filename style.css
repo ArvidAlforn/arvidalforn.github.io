@@ -308,7 +308,7 @@ footer .area-box{
     box-shadow: 0 4px 14px 0 rgb(0, 0, 0, 0.15);
     width: 100%;
     box-sizing: border-box;
-    background: linear-gradient(to right, #FFF8F1, rgba(255, 212, 186, 0.75), #FFF8F1);
+    background: linear-gradient(to right, #FFF8F1, rgba(255, 212, 186, 0.5), #FFF8F1);
 }
 footer img{
     height: 10px;
@@ -316,6 +316,20 @@ footer img{
 span{
     font-family: 'Times New Roman', Times, serif;
 }
+
+/* @keyframes scale-a-lil {
+    from {
+        scale: 0.5;
+    }
+  }
+    
+@media (prefers-reduced-motion: no-preference) {
+    img {
+        animation: scale-a-lil linear both;
+        animation-timeline: view();
+        animation-range: 25vh 75vh;
+    }
+} */
 
 @media only screen and (max-width: 1500px){
 
