@@ -177,7 +177,7 @@ ul li a, ul p{
 .right .area-box{
     justify-content: flex-start;
     border-radius: 40px 0 0 40px;
-    background-image: url(images/squash-racket-bright.png); 
+    background-image: url(images/squash-racket-bright2.png); 
     background-repeat: no-repeat;
     background-position: left 284px bottom;
     background-size: auto 90%;
@@ -272,7 +272,7 @@ ul li a, ul p{
 
 }
 #pricing .text-box strong{
-    font-size: 14px;
+    font-size: 15px;
 }
 
 #pitch .area-box, #contact .area-box{
@@ -367,6 +367,7 @@ span{
         max-width: 90vw;
         text-align: left;
         justify-content: flex-start;
+        font-size: 15px;
     }
     header .area-box, footer .area-box{
         background: none;
@@ -421,7 +422,7 @@ span{
         background-image: url(images/squash-player-bright2.png);
     }
     .right .area-box{
-        background-image: url(images/squash-racket-bright.png);
+        background-image: url(images/squash-racket-bright2.png);
     }
     #information-wrapper .left .area-box{
         background-position: bottom center;
