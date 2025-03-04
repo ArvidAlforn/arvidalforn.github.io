@@ -305,7 +305,7 @@ footer{
 footer .area-box{
     border-radius: 40px 40px 0 0;
     padding: 21px 28px;
-    box-shadow: 0 0 14px 0 rgb(0, 0, 0, 0.15);
+    box-shadow: 0 4px 14px 0 rgb(0, 0, 0, 0.15);
     width: 100%;
     box-sizing: border-box;
     background: linear-gradient(to right, #FFF8F1, rgba(255, 212, 186, 0.75), #FFF8F1);
@@ -440,7 +440,7 @@ span{
     }
     #information-wrapper .row{
         width: 100%;
-        justify-content: center;
+        justify-content: space-between;
     }
     #information-wrapper .text-box{
         width: auto;
