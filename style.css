@@ -128,7 +128,7 @@ ul{
 .line{
     width: 1px;
     height: 49px;
-    background-color:rgb(0, 0, 0, 0.1);
+    background-color:rgba(255, 63, 63, 0.1);
 }
 ul li a, ul p{
     font-size: 13px;
@@ -280,7 +280,7 @@ ul li a, ul p{
     box-sizing: border-box;
 }
 #pitch .area-box{
-    background: url(images/squash-court-background.png);
+    background: url(images/squash-court-background2.png);
     background-position: bottom center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -490,6 +490,13 @@ span{
 
     #pricing .area-box, #contact .area-box{
         width: 100vw;
+    }
+
+    #pricing .row{
+        gap: 21px;
+    }
+    #pricing img{
+        height: 84px;
     }
 
     #pitch .area-box{
